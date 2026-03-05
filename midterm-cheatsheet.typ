@@ -1,6 +1,6 @@
 #import "@preview/zap:0.5.0"
 
-#set text(font: "New Computer Modern", size: 9pt)
+#set text(font: "New Computer Modern", size: 9.6pt)
 #set par(leading: 0.42em, justify: false)
 #set page(paper: "us-letter", margin: (x: 0.5cm, y: 0.5cm), columns: 2)
 
@@ -152,10 +152,10 @@ Gain in dB:
 #eq($D / mu = (k T) / q = V_T arrow.l "Einstien Relation"$) 
 
 == Universal Physical Constants
-#eq($q = 1.602 times 10^(-19) " C"$, $k = 1.38 times 10^(-23) " J/K"$)
+#eq($q = 1.602 times 10^(-19) " C"$, $k = 8.62 times 10^(-5) (e V) / K$)
 #eq($V_T = (k T) / q approx 25.9 " mV at 300K"$)
+#eq($"Kelvin" = "Celcius" + 273.15 degree$)
 
 == Silicon Material Properties (300K)
-#eq($E_g = 1.12 " eV"$, $n_i approx 1.5 times 10^10 " cm"^(-3)$, $B=7.3 times 10^(13)"cm"^(15) k^(-3/2)$)
-#eq($epsilon_r = 11.7$, $epsilon_s = epsilon_r epsilon_0 approx 1.04 times 10^(-12) " F/cm"$)
-#eq($mu_n approx 1350 " cm"^2 / "Vs"$, $mu_p approx 480 " cm"^2 / "Vs"$)
+#eq($E_g = 1.12 " eV"$, $n_i approx 1.5 times 10^10 " cm"^(-3)$)
+#eq($B=7.3 times 10^(13)"cm"^(15) K^(-3/2)$)
