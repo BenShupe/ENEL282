@@ -1,6 +1,6 @@
 #import "@preview/zap:0.5.0"
 
-#set text(font: "New Computer Modern", size: 9.5pt)
+#set text(font: "New Computer Modern", size: 9pt)
 #set par(leading: 0.42em, justify: false)
 #set page(paper: "us-letter", margin: (x: 0.5cm, y: 0.5cm), columns: 2)
 
@@ -90,7 +90,6 @@ Gain in dB:
   wire((3.4, 1.5), (2.5, 1.5))
   earth("g2", (2.5, 1.5))
 })))
-\ \ \ \ \ \ \ \ \ \
 
 == Non-Inverting Amplifier — Finite Gain
 #eq($A arrow "Finite"$, $V_1 = V_i - V_o/A$)
@@ -143,19 +142,18 @@ Gain in dB:
 #eq($n = p = n_i$, $n_i = B T^(3/2) e^(-E_g / (2 k T))$)
 
 == Doped Semiconductors
-#eq($n p = n_i^2$, [Mass-Action Law])
+#eq($n p = n_i^2$)
 #eq($n_n approx N_D$, $p_n = n_i^2 / N_D$)
 #eq($p_p approx N_A$, $n_p = n_i^2 / N_A$)
 
 == Current Flow
-#eq($J_"drift" = q(n mu_n + p mu_p)E$)
-#eq($J_"diff" = q D_n (d n)/(d x) - q D_p (d p)/(d x)$ )
+// #eq($J_"drift" = q(n mu_n + p mu_p)E$)
+// #eq($J_"diff" = q D_n (d n)/(d x) - q D_p (d p)/(d x)$ )
 #eq($D / mu = (k T) / q = V_T arrow.l "Einstien Relation"$) 
 
 == Universal Physical Constants
 #eq($q = 1.602 times 10^(-19) " C"$, $k = 1.38 times 10^(-23) " J/K"$)
 #eq($V_T = (k T) / q approx 25.9 " mV at 300K"$)
-#eq($epsilon_0 = 8.854 times 10^(-14) " F/cm"$)
 
 == Silicon Material Properties (300K)
 #eq($E_g = 1.12 " eV"$, $n_i approx 1.5 times 10^10 " cm"^(-3)$, $B=7.3 times 10^(13)"cm"^(15) k^(-3/2)$)
