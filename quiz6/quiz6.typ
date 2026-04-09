@@ -1,5 +1,5 @@
 #let boxed = x => table([#x])
-#let pdf = (src, pages) => (
+#let pdf = (src, pages:1) => (
   for page_num in range(pages) {
     image(src, page: page_num+1)
   }
@@ -30,7 +30,7 @@ According to the fairchild datasheet I found from 2014, the peak reverse voltage
 According to that same datasheet the maximium average rectified current $I_"F(AV)"$ is $1.0$A
 === (c) Highlight the two values in the datasheet and submit it with your answer. (2 points)
 
-#align(center, boxed(pdf("1N4001.pdf", 2)))
+#align(center, boxed(pdf("1N4001.pdf", pages:2)))
 === (d) Calculate the minimum input voltage $V_I("min")$ that can be safely applied to the circuit. Show your work. (3 points)
 
 $
@@ -74,4 +74,8 @@ $
 $
 
 === (i) Of the two datasheet parameters identified in Parts (a) and (b), which one was more difficult to interpret correctly? Explain why this parameter was challenging. Then describe two specific resources where you would find authoritative information about this parameter for future reference. (3 point)
+
+The more difficult to interpret parameter was $I_"F(AV)"$, aka maximum rectified forward current. This was challenging because the datasheet lists two forward current values ($I_"F(AV)"$ and $I_"FSM"$). Looking at the course textbook,
+
 === (j) If measurements showed the actual forward voltage was 0.9 V instead of 0.7 V, describe one potential cause and propose how you would investigate it experimentally. (4 point)
+
