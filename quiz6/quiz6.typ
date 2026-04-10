@@ -79,4 +79,4 @@ The more difficult to interpret parameter was $I_"F(AV)"$, aka maximum rectified
 
 === (j) If measurements showed the actual forward voltage was 0.9 V instead of 0.7 V, describe one potential cause and propose how you would investigate it experimentally. (4 point)
 
-Using the wrong resistor calue could cause this. The diode eqation is $I_D=I_S (e^(V_D/V_T))$ Solving for $V_D$ gives, $V_D=V_T ln(I_D/I_S)$. If a higher current than reality is assumed, forward voltage must raise to match it. Therefore, the resistor value actually in circuit would have to be lower than $450 Omega$ to give $V_D=0.9$V. To investigate this I would first read the resistor value from its stripes then check the real value on the multimeter. If it was the wrong value I would switch it out for the correct value and find the forward voltage again.
+if measurements show the forward voltage as higher it is most likley due to a diffence in the temprature than what is expected. I would watch $V_D$ as I heat up the diode with a heat gun. If $V_D$ changes then it is confirmed.
