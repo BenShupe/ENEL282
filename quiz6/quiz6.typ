@@ -68,14 +68,14 @@ $
   V_I("max") = V_D+V_++I_"F(AV)"R = 0.7"V" + 5"V" + (1.0"A")(450 Omega) \
   V_I("max") = 455.7"V"\
 
-  V_I("min") = V_+ - V_"RMM" = 5"V" + 1000"V"\
+  V_I("min") = V_+ - V_"RMM" = 5"V" - 1000"V"\
   V_I("min") = -995"V"\
   #boxed($-995"V"<=V_I<=455.7"V"$)
 $
 
 === (i) Of the two datasheet parameters identified in Parts (a) and (b), which one was more difficult to interpret correctly? Explain why this parameter was challenging. Then describe two specific resources where you would find authoritative information about this parameter for future reference. (3 point)
 
-The more difficult to interpret parameter was $I_"F(AV)"$, aka maximum rectified forward current. This was challenging because the datasheet lists two forward current values ($I_"F(AV)"$ and $I_"FSM"$). Looking at the course textbook,
+The more difficult to interpret parameter was $I_"F(AV)"$, aka maximum rectified forward current. This was challenging because the datasheet lists two forward current values ($I_"F(AV)"$ and $I_"FSM"$). The course textbook, #text("Sedra and Smith: Microelectronic Circuits, Eigth Edition") provides authoritative information.
 
 === (j) If measurements showed the actual forward voltage was 0.9 V instead of 0.7 V, describe one potential cause and propose how you would investigate it experimentally. (4 point)
 
