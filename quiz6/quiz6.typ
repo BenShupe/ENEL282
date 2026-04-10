@@ -6,7 +6,7 @@
 )
 #align(center, [
 = ENEL 282 — QUIZ 7
-== Date: April 02, 2026
+== Due Date: April 09, 2026
 = Limiter Circuit Quiz
 == Total: 30 points
 ])
@@ -39,8 +39,8 @@ $
   V_+ - V_I < V_"RMM"\
   -V_I< V_"RMM" - V_+\
   V_I> V_+ - V_"RMM"\
-  V_I("min") = 5"V" - 48"V"\
-  #boxed($V_I("min") = -43"V"$)
+  V_I("min") = 5"V" - 50"V"\
+  #boxed($V_I("min") = -45"V"$)
 $
 
 === (e) Calculate the maximum input voltage $V_I("max")$ that can be safely applied to the circuit. Show your work. (3 points)
@@ -49,13 +49,13 @@ $
   I_D < I_"F(AV)"\
   (V_I-V_+-V_D)/R < I_"F(AV)"\
   V_I < V_D+V_++I_"F(AV)"R\
-  V_I("max") = 1.1"V" + 5"V" +(1.0"A")(450 Omega)\
-  #boxed($V_I("max") = 456.1"V"$)
+  V_I("max") = 0.7"V" + 5"V" +(1.0"A")(450 Omega)\
+  #boxed($V_I("max") = 455.7"V"$)
 $
 
 === (f) State the complete safe operating range for the input voltage $V_I$. (2 points)
 $
-  -43"V" <= V_I <= 456.1"V"
+  -45"V" <= V_I <= 455.7"V"
 $
 === (g) Explain why the diode forward voltage drop must be included in one calculation but not the other. (2 points)
 
@@ -63,14 +63,14 @@ Forward voltage drop only applies when voltage is being applied in the forward d
 
 === (h) If you were to replace the 1N4001 with a 1N4007 diode, how would the safe operating range change? Find the 1N4007 specifications and explain your answer. Submit the 1N4007 datasheet as well after highlighting the two values. (5 points)
 
-According to the same datasheet, for a 1N4007 diode, $V_"RMM" = 1000$V and $I_"F(AV)" = 1.0$A. 
+For a 1N4007 diode, $V_"RMM" = 1000$V and $I_"F(AV)" = 1.0$A. These numbers are pulled from the same datasheet.
 $
-  V_I("max") = V_D+V_++I_"F(AV)"R = 1.1"V" + 5"V" + (1.0"A")(450 Omega) \
-  V_I("max") = 456.1"V"\
+  V_I("max") = V_D+V_++I_"F(AV)"R = 0.7"V" + 5"V" + (1.0"A")(450 Omega) \
+  V_I("max") = 455.7"V"\
 
   V_I("min") = V_+ - V_"RMM" = 5"V" + 1000"V"\
   V_I("min") = -995"V"\
-  #boxed($-995"V"<=V_I<=456.1"V"$)
+  #boxed($-995"V"<=V_I<=455.7"V"$)
 $
 
 === (i) Of the two datasheet parameters identified in Parts (a) and (b), which one was more difficult to interpret correctly? Explain why this parameter was challenging. Then describe two specific resources where you would find authoritative information about this parameter for future reference. (3 point)
@@ -79,3 +79,4 @@ The more difficult to interpret parameter was $I_"F(AV)"$, aka maximum rectified
 
 === (j) If measurements showed the actual forward voltage was 0.9 V instead of 0.7 V, describe one potential cause and propose how you would investigate it experimentally. (4 point)
 
+Using the wrong resistor calue could cause this. The diode eqation is $I_D=I_S (e^(V_D/V_T))$ Solving for $V_D$ gives, $V_D=V_T ln(I_D/I_S)$. If a higher current than reality is assumed, forward voltage must raise to match it. Therefore, the resistor value actually in circuit would have to be lower than $450 Omega$ to give $V_D=0.9$V. To investigate this I would first read the resistor value from its stripes then check the real value on the multimeter. If it was the wrong value I would switch it out for the correct value and find the forward voltage again.
