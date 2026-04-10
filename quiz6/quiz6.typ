@@ -75,7 +75,7 @@ $
 
 === (i) Of the two datasheet parameters identified in Parts (a) and (b), which one was more difficult to interpret correctly? Explain why this parameter was challenging. Then describe two specific resources where you would find authoritative information about this parameter for future reference. (3 point)
 
-The more difficult to interpret parameter was $I_"F(AV)"$, aka maximum rectified forward current. This was challenging because the datasheet lists two forward current values ($I_"F(AV)"$ and $I_"FSM"$). The course textbook, #text("Sedra and Smith: Microelectronic Circuits, Eigth Edition") provides authoritative information.
+The more difficult to interpret parameter was $I_"F(AV)"$, aka maximum rectified forward current. This was challenging because the datasheet lists two forward current values ($I_"F(AV)"$ and $I_"FSM"$). The course textbook, #text("Sedra and Smith: Microelectronic Circuits, Eigth Edition", style: "italic") provides authoritative information.
 
 === (j) If measurements showed the actual forward voltage was 0.9 V instead of 0.7 V, describe one potential cause and propose how you would investigate it experimentally. (4 point)
 
